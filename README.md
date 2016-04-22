@@ -8,7 +8,7 @@
 		- Intsall grunt-cli
 	** Example 
 		- https://github.com/rockways3002/bourbon-library.git
-		- Run 'cd bourbonexample' and  checkout develop branch
+		- Run 'cd bourbon-lib' and  checkout develop branch
 		- Run 'sudo npm install'
 		- Run 'bower install'
 # Run site
