@@ -1,0 +1,17 @@
+{
+  "name": "rakbuku",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.3",
+    "font-awesome": "FortAwesome/Font-Awesome#~4.4.0"
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.2.5",
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2",
+    "bitters": "~1.0.0"
+  }
+}

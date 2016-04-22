@@ -1,0 +1,38 @@
+/* Style for Header content */
+.header-inner
+    +outer-container
+.logo
+    display: inline-block
+    +position(absolute, 2.5em null null null)
+    +media(max-width 1024px)
+        left: 0.938em
+    &__a--main
+        background-repeat: no-repeat
+        display: inline-block
+        +size(210px 200px)
+        +background-image(url("../images/logo.png"))
+        &.is-bounce-in-down
+            +animation(bounceInDown 1s)
+.main-menu
+    position: fixed
+    right: 0
+    z-index: 1000
+.menu-items
+    visibility: hidden
+    &.is-fade-in-right
+        visibility: visible
+        +animation(fadeInRight 1s)
+    .item__link
+        background-color: $menu-color
+        color: $white
+        display: inline-block
+        padding-top: 0.625em
+        text-align: center
+        +size(5em)
+        &:hover
+            +animation(shake 1s)
+        &.item--active
+            background-color: $menu-active
+        i
+            font-size: 2em
+            display: block

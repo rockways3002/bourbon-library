@@ -1,0 +1,45 @@
+.services__colum
+    color: $white
+    +span-columns(6)
+    +media($sm-screen)
+        +span-columns(12)
+        padding-left: 0.938em
+        padding-right: 0.938em
+    &.services--images
+        position: relative
+        .image-item
+            position: absolute
+            visibility: hidden
+            &.is-fade-in-down-big
+                visibility: visible
+                +animation(fadeInDownBig 1s)
+            +media($sm-screen)
+                position: relative
+                text-align: center
+                right: 0
+                left: 0
+                top: 0
+            &.image-item--pc
+                right: 0
+            &.image-item--tablet
+                left: 140px
+                top: 130px
+                +media($sm-screen)
+                    left: 0
+                    top: 0
+            &.image-item--mobile
+                top: 235px
+                left: 110px
+                +media($sm-screen)
+                    top: 0
+                    left: 0
+.services
+    .service__item
+        margin-top: 1.875em
+        visibility: hidden
+        &.is-fade-in-left
+            visibility: visible
+            +animation(fadeInLeft 2s)
+    .service__item--title
+        font-size: 1.125em
+        text-transform: uppercase

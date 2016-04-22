@@ -1,0 +1,35 @@
+@import "variables"
+@import "animate"
+html, body
+    height: 100%
+    +media($md-screen)
+        font-size: 0.875em
+    +media($sm-screen)
+        font-size: 0.75em
+section.screen
+    min-height: 100%
+.wrapper
+    +pad(2.5em 0 2.5em 0)
+    +outer-container
+.none-display
+    display: none !important
+.bg-linear-gradient
+    +linear-gradient(#3b2b45, #432d3f)
+.disc
+    color: $white
+    position: relative
+    +pad(1.25em 0 1.25em 0)
+    +animation(bounceInDown 1s)
+    +media($sm-screen)
+        padding-left: 0.938em
+        padding-right: 0.938em
+    .disc__title
+        font-size: 1.875em
+        margin: 0
+        &:after
+            background-color: $common-color
+            content: ""
+            +size(100px 2px)
+            +position(absolute, null null 0.625em 0)
+    .disc__content
+        font-size: 1.125em

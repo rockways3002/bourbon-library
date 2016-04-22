@@ -1,0 +1,38 @@
+/* Customs style for hero init template */
+.hero
+    height: 100%
+    .hero__indct
+        +outer-container
+        .hero-colum
+            +span-columns(3)
+            +media(max-width 1024px min-width 320px)
+                +span-columns(6)
+            &.hero__indct--left
+                background-color: #372b40
+                color: #fff
+                display: none
+                +pad(1em)
+                &.is-rotate-in-down-right
+                    display: block
+                    +position(absolute, auto auto 1px auto)
+                    +animation(rotateInDownRight 2s)
+                +media(max-width 1024px min-width 320px)
+                    left: 0.938em
+            &.hero__indct--right
+                color: $white
+                float: right
+                font-weight: bold
+                display: none
+                &.is-rotate-in-down-left
+                    display: block
+                    +position(absolute, auto 0 2.5em auto)
+                    +animation(rotateInDownLeft 2s)
+                +media(max-width 1024px min-width 320px)
+                    right: 0.938em
+                    text-align: center
+                .is-get-start
+                    background-color: $common-color
+                    color: $white
+                    display: inline-block
+                    text-transform: uppercase
+                    +pad(0.938em 2.188em)

@@ -1,0 +1,40 @@
+/* Style for Contact content */
+.is-contact
+    background-color: #3d3047
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+    +background-image(url("../images/map-image.png"))
+    input
+        +pad(1em)
+    textarea
+        height: 13.438em
+    button
+    	background-color: $common-color
+    	border: none
+        padding: 0.938em 2.188em
+    input, textarea, button
+        display: none
+        margin-bottom: 1.875em
+        &.is-bounce-in
+            display: block
+            +animation(fadeIn 2s)
+.contact 
+    margin-top: 2.500em
+.contacter, .messages
+    +clearfix
+    +span-columns(6)
+    +media($sm-screen)
+        +span-columns(12)
+        padding-left: 0.938em
+        padding-right: 0.938em
+.messages
+    +omega
+.submit-info
+    +span-columns(12)
+    +media($sm-screen)
+        padding-left: 0.938em
+        padding-right: 0.938em
+.messages
+    #submit
+       float: right

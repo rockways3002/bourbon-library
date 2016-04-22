@@ -1,0 +1,37 @@
+.bg-violet-opacity
+    background-color: #372b40
+    .wrapper
+    	+pad(2em 0)
+.is-outwork .disc
+    +media($sm-screen)
+        padding-left: 0.938em
+        padding-right: 0.938em
+.outworks
+    +clearfix
+    margin-top: 3.125em
+    +media($sm-screen)
+    	+pad(0 0.938em)
+    &__item
+        background-color: $white
+        margin-bottom: 2.35765%
+        visibility: hidden
+        &.is-bounce-in
+            visibility: visible
+            +animation(bounceIn 2s)
+        +media(min-width 769px)
+            +span-columns(4)
+            +omega(3n)
+        +media($sm-screen-horizontal)
+            +span-columns(6)
+            +omega(2n)
+        +media($xs-screen)
+            +span-columns(12)
+        &--image
+            width: 100%
+        &--disc
+            text-align: center
+            +pad(1.563em 0)
+            &-prodct
+                font-size: 1.125em
+            &-post
+                font-size: 0.875em
