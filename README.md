@@ -8,9 +8,9 @@
 		- Intsall grunt-cli
 	** Example 
 		- https://github.com/rockways3002/bourbon-library.git
-		- Run 'cd bourbon-library' and  checkout develop branch
+		- Checkout develop branch
 		- Run 'sudo npm install'
 		- Run 'bower install'
 # Run site
 	- Run 'grunt serve'
-	- Open browser and run with '192.168.33.25:9000'
+	- Open browser and run with 'locahost:9000'
