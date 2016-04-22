@@ -7,8 +7,8 @@
 		- Install bower
 		- Intsall grunt-cli
 	** Example 
-		- Clone sourecode: https://github.com/nhanhv/Rakbuku.git
-		- Run 'cd bourbonexample' and  checkout develop branch
+		- Clone sourecode: https://github.com/rockways3002/bourbon-library.git
+		- Run 'cd bourbon-example' and  checkout develop branch
 		- Run 'sudo npm install'
 		- Run 'bower install'
 # Run site
