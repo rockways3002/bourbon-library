@@ -13,4 +13,4 @@
 		- Run 'bower install'
 # Run site
 	- Run 'grunt serve'
-	- Open browser and run with '192.168.33.25:9000'
+	- Open browser and run with 'localhost:9000'
